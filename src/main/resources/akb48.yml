@@ -1,0 +1,81 @@
+--- 
+- !name.yamamoto.satoshi.java8.Person
+  birthday: !java.util.Date "60553926000000"
+  description: Team A
+  gender: &3 !name.yamamoto.satoshi.java8.Person$Sex FEMALE
+  name: 伊豆田莉奈
+- !name.yamamoto.satoshi.java8.Person
+  birthday: !java.util.Date "60553926000000"
+  description: Team A
+  gender: *3
+  name: 入山杏奈
+- !name.yamamoto.satoshi.java8.Person
+  birthday: !java.util.Date "60553926000000"
+  description: Team A
+  gender: *3
+  name: 岩田華怜
+- !name.yamamoto.satoshi.java8.Person
+  birthday: !java.util.Date "60553926000000"
+  description: Team A
+  gender: *3
+  name: 大島涼花
+- !name.yamamoto.satoshi.java8.Person
+  birthday: !java.util.Date "60553926000000"
+  description: Team A
+  gender: *3
+  name: 川栄李奈
+- !name.yamamoto.satoshi.java8.Person
+  birthday: !java.util.Date "60553926000000"
+  description: Team A
+  gender: *3
+  name: 兒玉遥
+- !name.yamamoto.satoshi.java8.Person
+  birthday: !java.util.Date "60553926000000"
+  description: Team A
+  gender: *3
+  name: 小林菜里奈
+- !name.yamamoto.satoshi.java8.Person
+  birthday: !java.util.Date "60553926000000"
+  description: Team A
+  gender: *3
+  name: 佐々木優佳里
+- !name.yamamoto.satoshi.java8.Person
+  birthday: !java.util.Date "60553926000000"
+  description: Team A
+  gender: *3
+  name: 田野優花
+- !name.yamamoto.satoshi.java8.Person
+  birthday: !java.util.Date "60553926000000"
+  description: Team A
+  gender: *3
+  name: 松井咲子
+- !name.yamamoto.satoshi.java8.Person
+  birthday: !java.util.Date "60553926000000"
+  description: Team A
+  gender: *3
+  name: 森川彩香
+- !name.yamamoto.satoshi.java8.Person
+  birthday: !java.util.Date "60553926000000"
+  description: Team A
+  gender: *3
+  name: 矢倉楓子
+- !name.yamamoto.satoshi.java8.Person
+  birthday: !java.util.Date "60553926000000"
+  description: Team A
+  gender: *3
+  name: 横山由依
+- !name.yamamoto.satoshi.java8.Person
+  birthday: !java.util.Date "60553926000000"
+  description: Team A
+  gender: *3
+  name: 渡辺麻友
+- !name.yamamoto.satoshi.java8.Person
+  birthday: !java.util.Date "60553926000000"
+  description: Team A
+  gender: *3
+  name: 田北香世子
+- !name.yamamoto.satoshi.java8.Person
+  birthday: !java.util.Date "60553926000000"
+  description: Team A
+  gender: *3
+  name: 西山玲奈
