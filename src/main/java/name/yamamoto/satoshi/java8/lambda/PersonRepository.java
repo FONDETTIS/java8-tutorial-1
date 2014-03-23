@@ -21,10 +21,10 @@ public class PersonRepository {
 		init();
 	}
 
-	public List<Person> findBy(PersonHandler handler) {
+	public List<Person> findBy(PersonSelector handler) {
 		List<Person> retval = new ArrayList<>();
 		for (Person p : persons) {
-			if (handler.choice(p)) {
+			if (handler.select(p)) {
 				retval.add(p);
 			}
 		}

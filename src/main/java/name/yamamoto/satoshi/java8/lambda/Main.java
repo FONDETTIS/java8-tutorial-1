@@ -16,11 +16,14 @@ public class Main {
 			System.out.println(member);
 		}
 		
-		List<Person> teamA = repository.findBy(
-				(Person p) -> p.getTeam().contains("A"));
+		List<Person> teamA = repository.findBy((p) -> 
+			p.getTeam().contains("A")
+		);
 		print(teamA, "*** Team A");
 			
-		List<Person> underage = repository.findBy((Person p) -> p.getAge() < 20);
+		List<Person> underage = repository.findBy((p) -> 
+			p.getAge() < 20
+		);
 		print(underage, "*** Under Age");
 		
 		
