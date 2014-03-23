@@ -1,14 +1,15 @@
-package name.yamamoto.satoshi.java8;
+package name.yamamoto.satoshi.java8.lambda;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.time.chrono.IsoChronology;
 
 public class Person implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private String name;
 	private LocalDate birthday;
 	private Sex gender;
-	private String description;
+	private String team;
 	
 	public enum Sex {
 		MALE, FEMALE;
@@ -18,11 +19,12 @@ public class Person implements Serializable {
 		super();
 	}
 	
-	public Person(String name, LocalDate birthday, Sex gender) {
+	public Person(String name, LocalDate birthday, Sex gender, String team) {
 		super();
 		this.name = name;
 		this.birthday = birthday;
 		this.gender = gender;
+		this.team = team;
 	}
 
 	public String getName() {
@@ -33,6 +35,12 @@ public class Person implements Serializable {
 		this.name = name;
 	}
 
+	public int getAge() {
+        return birthday
+            .until(IsoChronology.INSTANCE.dateNow())
+            .getYears();
+    }
+	
 	public LocalDate getBirthday() {
 		return birthday;
 	}
@@ -49,18 +57,18 @@ public class Person implements Serializable {
 		this.gender = gender;
 	}
 
-	public String getDescription() {
-		return description;
+	public String getTeam() {
+		return team;
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
+	public void setTeam(String description) {
+		this.team = description;
 	}
 
 	@Override
 	public String toString() {
 		return "Person [name=" + name + ", birthday=" + birthday + ", gender="
-				+ gender + ", description=" + description + "]";
+				+ gender + ", description=" + team + "]";
 	}
 	
 }
