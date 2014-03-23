@@ -454,6 +454,121 @@ public class Main {
 		person.setDescription("Team B");
 		akb48.add(person);
 		
+		// team 4
+		person = new Person();
+		person.setName("相笠萌");
+		person.setBirthday(new Date(1988, 10, 17));
+		person.setGender(Sex.FEMALE);
+		person.setDescription("Team 4");
+		akb48.add(person);
+		
+		person = new Person();
+		person.setName("岩立沙穂");
+		person.setBirthday(new Date(1988, 10, 17));
+		person.setGender(Sex.FEMALE);
+		person.setDescription("Team 4");
+		akb48.add(person);
+		
+		person = new Person();
+		person.setName("内山奈月");
+		person.setBirthday(new Date(1988, 10, 17));
+		person.setGender(Sex.FEMALE);
+		person.setDescription("Team 4");
+		akb48.add(person);
+		
+		person = new Person();
+		person.setName("梅田綾乃");
+		person.setBirthday(new Date(1988, 10, 17));
+		person.setGender(Sex.FEMALE);
+		person.setDescription("Team 4");
+		akb48.add(person);
+		
+		person = new Person();
+		person.setName("岡田彩花");
+		person.setBirthday(new Date(1988, 10, 17));
+		person.setGender(Sex.FEMALE);
+		person.setDescription("Team 4");
+		akb48.add(person);
+		
+		person = new Person();
+		person.setName("岡田奈々");
+		person.setBirthday(new Date(1988, 10, 17));
+		person.setGender(Sex.FEMALE);
+		person.setDescription("Team 4");
+		akb48.add(person);
+		
+		person = new Person();
+		person.setName("北澤早紀");
+		person.setBirthday(new Date(1988, 10, 17));
+		person.setGender(Sex.FEMALE);
+		person.setDescription("Team 4");
+		akb48.add(person);
+		
+		person = new Person();
+		person.setName("小嶋真子");
+		person.setBirthday(new Date(1988, 10, 17));
+		person.setGender(Sex.FEMALE);
+		person.setDescription("Team 4");
+		akb48.add(person);
+		
+		person = new Person();
+		person.setName("篠崎彩奈");
+		person.setBirthday(new Date(1988, 10, 17));
+		person.setGender(Sex.FEMALE);
+		person.setDescription("Team 4");
+		akb48.add(person);
+		
+		person = new Person();
+		person.setName("高島祐利奈");
+		person.setBirthday(new Date(1988, 10, 17));
+		person.setGender(Sex.FEMALE);
+		person.setDescription("Team 4");
+		akb48.add(person);
+		
+		person = new Person();
+		person.setName("西野未姫");
+		person.setBirthday(new Date(1988, 10, 17));
+		person.setGender(Sex.FEMALE);
+		person.setDescription("Team 4");
+		akb48.add(person);
+		
+		person = new Person();
+		person.setName("橋本はかり");
+		person.setBirthday(new Date(1988, 10, 17));
+		person.setGender(Sex.FEMALE);
+		person.setDescription("Team 4");
+		akb48.add(person);
+		
+		person = new Person();
+		person.setName("前田美月");
+		person.setBirthday(new Date(1988, 10, 17));
+		person.setGender(Sex.FEMALE);
+		person.setDescription("Team 4");
+		akb48.add(person);
+		
+		person = new Person();
+		person.setName("峯岸みなみ");
+		person.setBirthday(new Date(1988, 10, 17));
+		person.setGender(Sex.FEMALE);
+		person.setDescription("Team 4");
+		akb48.add(person);
+		
+		person = new Person();
+		person.setName("村山彩希");
+		person.setBirthday(new Date(1988, 10, 17));
+		person.setGender(Sex.FEMALE);
+		person.setDescription("Team 4");
+		akb48.add(person);
+		
+		person = new Person();
+		person.setName("茂木忍");
+		person.setBirthday(new Date(1988, 10, 17));
+		person.setGender(Sex.FEMALE);
+		person.setDescription("Team 4");
+		akb48.add(person);
+		
+
+		
 		Yaml.dump(akb48, new File("src/main/resources/akb48.yml"));
 	}
 
