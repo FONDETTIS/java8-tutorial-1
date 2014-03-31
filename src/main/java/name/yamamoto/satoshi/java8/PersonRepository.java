@@ -1,4 +1,4 @@
-package name.yamamoto.satoshi.java8.lambda;
+package name.yamamoto.satoshi.java8;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,8 +12,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import name.yamamoto.satoshi.java8.lambda.Person.Sex;
-
 public class PersonRepository {
 	private List<Person> persons;
 
@@ -21,7 +19,7 @@ public class PersonRepository {
 		init();
 	}
 
-	public List<Person> findBy(PersonSelector handler) {
+	public List<Person> findBy(PersonFinder handler) {
 		List<Person> retval = new ArrayList<>();
 		for (Person p : persons) {
 			if (handler.select(p)) {

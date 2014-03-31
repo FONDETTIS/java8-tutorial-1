@@ -1,4 +1,4 @@
-package name.yamamoto.satoshi.java8.lambda;
+package name.yamamoto.satoshi.java8;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -10,10 +10,7 @@ public class Person implements Serializable {
 	private LocalDate birthday;
 	private Sex gender;
 	private String team;
-	
-	public enum Sex {
-		MALE, FEMALE;
-	}
+	private boolean captain;
 	
 	public Person() {
 		super();
@@ -64,11 +61,19 @@ public class Person implements Serializable {
 	public void setTeam(String description) {
 		this.team = description;
 	}
+	
+	public boolean isCaptain() {
+		return captain;
+	}
+
+	public void setCaptain(boolean captain) {
+		this.captain = captain;
+	}
 
 	@Override
 	public String toString() {
 		return "Person [name=" + name + ", birthday=" + birthday + ", gender="
-				+ gender + ", description=" + team + "]";
+				+ gender + ", team=" + team + ", captain=" + captain + "]";
 	}
 	
 }
