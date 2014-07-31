@@ -11,42 +11,38 @@ import java.time.temporal.TemporalAdjusters;
 
 public class Main {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
+
+		// オブジェクトの生成
+		LocalDateTime timePoint = LocalDateTime.now();	// 現在の日付と時刻
+		LocalDate.of(2012, Month.DECEMBER, 12);	// 値から作成
+		LocalDate.ofEpochDay(150);	// 1970年の中頃
+		LocalTime.of(17, 18);	// 今日の帰宅時に利用した電車
+		LocalTime.parse("10:15:30");	// 文字列から作成
 		
-		// The current date and time
-		LocalDateTime timePoint = LocalDateTime.now();
-		// from values
-		LocalDate.of(2012, Month.DECEMBER, 12);
-		// middle of 1970
-		LocalDate.ofEpochDay(150);
-		// the train I took home today
-		LocalTime.of(17, 18);
-		// From a String
-		LocalTime.parse("10:15:30");
-		
-		// Standard Java getter conventions are used in order to  
-		// obtain values from Java SE 8 classes.
+		// 値の取得は標準的なgetterを使う
 		LocalDate theDate = timePoint.toLocalDate();
 		Month month = timePoint.getMonth();
 		int day = timePoint.getDayOfMonth();
 		timePoint.getSecond();
 		
-		// Set the value, returning a new object
+		// 値を変更するメソッドは withと呼ばれ、新しいオブジェクトを返す
 		LocalDateTime thePast = timePoint
 				.withDayOfMonth(10)
 				.withYear(2010);
-		
-		// You can use direct manipulation methods, 
-		// or pass a value and field pair
+		// 値とフィールドのペア
 		LocalDateTime yetAnother = thePast
 				.plusWeeks(3)
 				.plus(3, ChronoUnit.WEEKS);
 		
-		// The new API also has the concept of an adjuster
-		LocalDateTime foo = timePoint.with(TemporalAdjusters
-				.lastDayOfMonth());
-		LocalDateTime bar = timePoint.with(TemporalAdjusters
-				.previousOrSame(DayOfWeek.WEDNESDAY));
+		// Adjusterは、日付を操作するコードブロック
+		// * withAdjuster: ひとつ以上のフィールドを設定するためのクラス
+		// * plusAdjuster: フィールド同士の加算や減算に使用するためのクラス
+		LocalDateTime foo = timePoint.with(
+				TemporalAdjusters.lastDayOfMonth());
+		LocalDateTime bar = timePoint.with(
+				TemporalAdjusters.previousOrSame(DayOfWeek.WEDNESDAY));
 		
 	}
 
